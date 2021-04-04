@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+    <link rel="stylesheet" href="D:\projects\ChatRoom\cr.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="D:\projects\ChatRoom\cr1.css" />
+    <link rel="stylesheet" href="D:\projects\ChatRoom\first.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <title>ChatRoom</title>
+
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">خانه</a>
+        <a href="#profile">پروفایل</a>
+        <a href="#contact">پیام</a>
+        <a href="#settings">تنظیمات</a>
+        <form>
+            <input type="text" name="search" placeholder="جست و جو...">
+        </form>
+        <div class="login-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="نام کاربری" name="username">
+                <input type="text" placeholder="رمز عبور" name="psw">
+                <button type="submit">ورود</button>
+                <button type="button">ثبت نام</button>
+                
+             </form>
+        </div>
+       
+    </div>
+
+
+
+   <div id="he1"><h2 style="text-align:center">اتاق چت</h2></div>
+
+
+    <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Alireza')" id="defaultOpen"><h2>علیرضا</h2></button>
+            <button class="tablinks" onclick="openCity(event, 'Arman')"><h2>آرمان</h2></button>
+            <button class="tablinks" onclick="openCity(event, 'Omid')"><h2>امید</h2></button>
+        </div>
+
+    <div id="Alireza" class="tabcontent">
+        <h3>علیرضا سهرابی</h3>
+        <h2>Chat Messages</h2>
+
+        <!--neeeeeeeeeeeeeeeewwwwwwwwwwwwwwwwwwwwww-->
+        <ul class="chat-thread">
+            <li>Are we meeting today?</li>
+            <li>yes, what time suits you?</li>
+            <li>I was thinking after lunch, I have a meeting in the morning</li>
+        </ul>
+
+        <form class="chat-window">
+            <input class="chat-window-message" name="chat-window-message" type="text" autocomplete="off" autofocus />
+        </form>
+
+        <!--nnneeeeeeeeeeeeeeeeeeeeeeeewwwwwwwwwwwwww-->
+
+        
+      
+        <div class="chat-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Chat</h1>
+
+                <label for="msg"><b>Message</b></label>
+                <textarea placeholder="Type message.." name="msg" required class="adc"></textarea>
+
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+
+
+    <div id="َArman" class="tabcontent">
+        <h3>آرمان</h3>
+        </div>
+          
+
+    <div id="Omid" class="tabcontent">
+        <h3>امید</h3>
+        <p> </p>
+    </div>
+
+    <div class="footer">
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Created by 4lirez4</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>درباره این وبسایت</h2>
+                </div>
+                <div class="modal-body">
+                    <p>some text</p>
+                    <p>Some other text...</p>
+                </div>
+                <div class="modal-footer">
+                    <h3>شماره پشتیبانی: 09127957081</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+
+    <script src="D:\projects\ChatRoom\cr.js"></script>
+</body>
+</html>
